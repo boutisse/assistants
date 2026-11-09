@@ -1,7 +1,7 @@
 {
   "name": "boutisse-socle",
   "displayName": "Boutisse — Socle",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Orientation vers le bon spécialiste, garde-fous, lecture fiable des données Odoo, aide Odoo et mise en page Boutisse. Obligatoire pour tous.",
   "author": {
     "name": "Silio Labs — Briac Silio",
