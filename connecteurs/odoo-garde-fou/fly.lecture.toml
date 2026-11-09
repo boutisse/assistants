@@ -11,7 +11,7 @@ primary_region = "cdg"                 # Paris
 [env]
   BOUTISSE_PROFIL = "lecture"
   ODOO_URL = "https://boutisse.odoo.com"
-  ODOO_DB = "boutisse"                 # À VÉRIFIER : nom exact de la base (Odoo ▸ /web/database/selector ou Gregory)
+  ODOO_DB = "boutisse"                 # vérifié le 09/11/2026 (/web/database/list)
   MCP_PUBLIC_URL = "https://boutisse-odoo-lecture.fly.dev"
 
 [[mounts]]

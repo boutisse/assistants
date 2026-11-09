@@ -43,7 +43,7 @@ Usage : `ODOO_URL=… ODOO_DB=… ODOO_USERNAME=… ODOO_API_KEY=… node test-b
 ## Impacts / points à vérifier
 - **Épinglage** : le garde-fou remplace `dist/tools/index.js`. Toute nouvelle version du connecteur = relecture de ce fichier avant de monter de version.
 - **`ODOO_USERNAME` / `ODOO_API_KEY` en mode http** (code de la 0.2.2 relu le 09/11/2026) : ce compte sert seulement au démarrage (vérification de la connexion et instantané des ressources : modules, rapports, sociétés, langue). **Les outils utilisent la clé de la personne connectée**, stockée chiffrée sur le volume `/data` (`dist/bin.js`, résolveur par personne). Mettre quand même un compte peu privilégié, pas Admin – Intégration : la clé est dans les secrets Fly. Conséquence : la ressource `odoo://user-context` décrit ce compte technique, pas la personne ; le socle identifie la personne autrement (skill `orientation`). À confirmer sur la copie avec le test « Qui suis-je ? ».
-- **`ODOO_DB`** : nom de base à confirmer.
+- **`ODOO_DB`** : `boutisse` (vérifié le 09/11/2026).
 - **Licences** : seules les personnes qui ont un compte Odoo peuvent se connecter (10 licences pour ~30 personnes).
 - **Coût d'hébergement** : 1 petite machine Fly.io le premier mois (2 ensuite) qui s'arrêtent quand personne ne s'en sert. Non chiffré à ce jour.
 - **Limite connue du profil brouillon** : `odoo_write` sur un devis déjà confirmé n'est pas bloqué par le garde-fou (seul le champ `state` l'est). Odoo verrouille une partie des lignes ; la consigne du skill Ventes l'interdit. À durcir si un cas réel se présente.
