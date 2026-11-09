@@ -1,0 +1,20 @@
+{
+  "name": "boutisse-fournisseurs",
+  "displayName": "Boutisse — Fournisseurs et paiements",
+  "version": "0.1.0",
+  "description": "Rapprochement commande / réception / facture, litiges, bon à payer, préparation de la liste de paiements, alerte RIB. Ne paie jamais.",
+  "author": {
+    "name": "Silio Labs — Briac Silio",
+    "email": "briac@silio-labs.com"
+  },
+  "license": "UNLICENSED",
+  "keywords": [
+    "boutisse",
+    "achats",
+    "factures fournisseurs",
+    "paiements"
+  ],
+  "dependencies": [
+    "boutisse-socle"
+  ]
+}

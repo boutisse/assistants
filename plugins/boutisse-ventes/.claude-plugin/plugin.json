@@ -1,0 +1,20 @@
+{
+  "name": "boutisse-ventes",
+  "displayName": "Boutisse — Ventes et facturation",
+  "version": "0.1.0",
+  "description": "Bon de commande client vers devis brouillon, reste à facturer, factures à émettre, relances préparées. N'envoie rien.",
+  "author": {
+    "name": "Silio Labs — Briac Silio",
+    "email": "briac@silio-labs.com"
+  },
+  "license": "UNLICENSED",
+  "keywords": [
+    "boutisse",
+    "ventes",
+    "devis",
+    "facturation"
+  ],
+  "dependencies": [
+    "boutisse-socle"
+  ]
+}

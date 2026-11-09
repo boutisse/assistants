@@ -1,0 +1,25 @@
+# Déploiement « Odoo Boutisse – brouillons »
+# Même image, profil brouillon : devis brouillons, activités, notes internes, photos de BC.
+# Secrets : mêmes noms que fly.lecture.toml, valeurs DIFFÉRENTES (clé de chiffrement et mot de passe admin propres).
+app = "boutisse-odoo-brouillon"        # à adapter
+primary_region = "cdg"
+
+[build]
+  dockerfile = "Dockerfile"
+
+[env]
+  BOUTISSE_PROFIL = "brouillon"
+  ODOO_URL = "https://boutisse.odoo.com"
+  ODOO_DB = "boutisse"                 # À VÉRIFIER
+  MCP_PUBLIC_URL = "https://boutisse-odoo-brouillon.fly.dev"
+
+[[mounts]]
+  source = "odoo_brouillon_users"
+  destination = "/data"
+
+[http_service]
+  internal_port = 3000
+  force_https = true
+  auto_stop_machines = "stop"
+  auto_start_machines = true
+  min_machines_running = 0

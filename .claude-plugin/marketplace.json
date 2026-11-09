@@ -1,0 +1,68 @@
+{
+  "name": "boutisse-assistants",
+  "owner": {
+    "name": "Silio Labs — Briac Silio",
+    "email": "briac@silio-labs.com"
+  },
+  "metadata": {
+    "description": "Assistants IA de Boutisse : un socle commun et un plugin par spécialiste, branchés selon les personnes.",
+    "version": "0.2.0"
+  },
+  "plugins": [
+    {
+      "name": "boutisse-socle",
+      "source": "./plugins/boutisse-socle",
+      "description": "Orientation vers le bon spécialiste, garde-fous, lecture fiable des données Odoo, aide Odoo et mise en page Boutisse. Obligatoire pour tous."
+    },
+    {
+      "name": "boutisse-direction",
+      "source": "./plugins/boutisse-direction",
+      "description": "CA, EBE, résultat, trésorerie, encours, dépendance client et point du lundi pour la direction. Lecture seule."
+    },
+    {
+      "name": "boutisse-compta-tva",
+      "source": "./plugins/boutisse-compta-tva",
+      "description": "Contrôle des écritures, synthèse de TVA du mois, écarts à expliquer, anomalies à corriger avant clôture. Ne valide rien."
+    },
+    {
+      "name": "boutisse-fournisseurs",
+      "source": "./plugins/boutisse-fournisseurs",
+      "description": "Rapprochement commande / réception / facture, litiges, bon à payer, préparation de la liste de paiements, alerte RIB. Ne paie jamais."
+    },
+    {
+      "name": "boutisse-ventes",
+      "source": "./plugins/boutisse-ventes",
+      "description": "Bon de commande client vers devis brouillon, reste à facturer, factures à émettre, relances préparées. N'envoie rien."
+    },
+    {
+      "name": "boutisse-chantiers",
+      "source": "./plugins/boutisse-chantiers",
+      "description": "Fiche chantier, prévu / réel, retard, reste à facturer, prévisionnel d'un nouveau chantier (calculette)."
+    },
+    {
+      "name": "boutisse-appels-offres",
+      "source": "./plugins/boutisse-appels-offres",
+      "description": "Analyse d'un dossier de consultation et rédaction du mémoire technique au format Boutisse."
+    },
+    {
+      "name": "boutisse-qhse",
+      "source": "./plugins/boutisse-qhse",
+      "description": "Échéances formations, visites médicales, attestations sous-traitants, DICT. Lecture et alertes."
+    },
+    {
+      "name": "boutisse-commercial",
+      "source": "./plugins/boutisse-commercial",
+      "description": "Fiches clients, chiffre d'affaires par client, dépendance, veille des marchés publics."
+    },
+    {
+      "name": "boutisse-admin-odoo",
+      "source": "./plugins/boutisse-admin-odoo",
+      "description": "Diagnostic et réglage d'Odoo avec sauvegarde, test, retour arrière et journal. Réservé à Briac."
+    },
+    {
+      "name": "boutisse-veilleur",
+      "source": "./plugins/boutisse-veilleur",
+      "description": "Contrôle hebdomadaire des anomalies Odoo (TVA, RIB, abonnement, brouillons, rapprochements…) et alerte du responsable."
+    }
+  ]
+}

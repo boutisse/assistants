@@ -1,0 +1,20 @@
+{
+  "name": "boutisse-chantiers",
+  "displayName": "Boutisse — Chantiers",
+  "version": "0.1.0",
+  "description": "Fiche chantier, prévu / réel, retard, reste à facturer, prévisionnel d'un nouveau chantier (calculette).",
+  "author": {
+    "name": "Silio Labs — Briac Silio",
+    "email": "briac@silio-labs.com"
+  },
+  "license": "UNLICENSED",
+  "keywords": [
+    "boutisse",
+    "chantiers",
+    "projets",
+    "debours"
+  ],
+  "dependencies": [
+    "boutisse-socle"
+  ]
+}

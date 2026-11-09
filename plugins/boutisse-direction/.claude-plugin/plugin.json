@@ -1,0 +1,20 @@
+{
+  "name": "boutisse-direction",
+  "displayName": "Boutisse — Direction",
+  "version": "0.1.1",
+  "description": "CA, EBE, résultat, trésorerie, encours, dépendance client et point du lundi pour la direction. Lecture seule.",
+  "author": {
+    "name": "Silio Labs — Briac Silio",
+    "email": "briac@silio-labs.com"
+  },
+  "license": "UNLICENSED",
+  "keywords": [
+    "boutisse",
+    "direction",
+    "pilotage",
+    "tresorerie"
+  ],
+  "dependencies": [
+    "boutisse-socle"
+  ]
+}

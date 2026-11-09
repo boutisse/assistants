@@ -1,0 +1,20 @@
+{
+  "name": "boutisse-commercial",
+  "displayName": "Boutisse — Commercial et veille",
+  "version": "0.1.0",
+  "description": "Fiches clients, chiffre d'affaires par client, dépendance, veille des marchés publics.",
+  "author": {
+    "name": "Silio Labs — Briac Silio",
+    "email": "briac@silio-labs.com"
+  },
+  "license": "UNLICENSED",
+  "keywords": [
+    "boutisse",
+    "commercial",
+    "clients",
+    "veille"
+  ],
+  "dependencies": [
+    "boutisse-socle"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "name": "boutisse-admin-odoo",
+  "displayName": "Boutisse — Administration Odoo",
+  "version": "0.1.0",
+  "description": "Diagnostic et réglage d'Odoo avec sauvegarde, test, retour arrière et journal. Réservé à Briac.",
+  "author": {
+    "name": "Silio Labs — Briac Silio",
+    "email": "briac@silio-labs.com"
+  },
+  "license": "UNLICENSED",
+  "keywords": [
+    "boutisse",
+    "odoo",
+    "administration"
+  ],
+  "dependencies": [
+    "boutisse-socle"
+  ]
+}

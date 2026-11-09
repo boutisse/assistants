@@ -1,0 +1,19 @@
+{
+  "name": "boutisse-appels-offres",
+  "displayName": "Boutisse — Appels d'offres",
+  "version": "0.1.0",
+  "description": "Analyse d'un dossier de consultation et rédaction du mémoire technique au format Boutisse.",
+  "author": {
+    "name": "Silio Labs — Briac Silio",
+    "email": "briac@silio-labs.com"
+  },
+  "license": "UNLICENSED",
+  "keywords": [
+    "boutisse",
+    "appels d'offres",
+    "memoire technique"
+  ],
+  "dependencies": [
+    "boutisse-socle"
+  ]
+}

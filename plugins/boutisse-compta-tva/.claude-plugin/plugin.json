@@ -1,0 +1,20 @@
+{
+  "name": "boutisse-compta-tva",
+  "displayName": "Boutisse — Comptabilité et TVA",
+  "version": "0.1.0",
+  "description": "Contrôle des écritures, synthèse de TVA du mois, écarts à expliquer, anomalies à corriger avant clôture. Ne valide rien.",
+  "author": {
+    "name": "Silio Labs — Briac Silio",
+    "email": "briac@silio-labs.com"
+  },
+  "license": "UNLICENSED",
+  "keywords": [
+    "boutisse",
+    "comptabilite",
+    "tva",
+    "cloture"
+  ],
+  "dependencies": [
+    "boutisse-socle"
+  ]
+}

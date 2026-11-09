@@ -1,0 +1,20 @@
+{
+  "name": "boutisse-veilleur",
+  "displayName": "Boutisse — Veilleur",
+  "version": "0.1.0",
+  "description": "Contrôle hebdomadaire des anomalies Odoo (TVA, RIB, abonnement, brouillons, rapprochements…) et alerte du responsable.",
+  "author": {
+    "name": "Silio Labs — Briac Silio",
+    "email": "briac@silio-labs.com"
+  },
+  "license": "UNLICENSED",
+  "keywords": [
+    "boutisse",
+    "veille",
+    "alertes",
+    "controle"
+  ],
+  "dependencies": [
+    "boutisse-socle"
+  ]
+}

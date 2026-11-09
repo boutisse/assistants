@@ -1,0 +1,20 @@
+{
+  "name": "boutisse-qhse",
+  "displayName": "Boutisse — QHSE et administratif",
+  "version": "0.1.0",
+  "description": "Échéances formations, visites médicales, attestations sous-traitants, DICT. Lecture et alertes.",
+  "author": {
+    "name": "Silio Labs — Briac Silio",
+    "email": "briac@silio-labs.com"
+  },
+  "license": "UNLICENSED",
+  "keywords": [
+    "boutisse",
+    "qhse",
+    "securite",
+    "administratif"
+  ],
+  "dependencies": [
+    "boutisse-socle"
+  ]
+}
