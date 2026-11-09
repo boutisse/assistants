@@ -1,0 +1,25 @@
+# Déploiement de TEST « Odoo Boutisse – lecture » → copie Odoo tests-compta (phase 4 du plan).
+# Application distincte de la prod : à supprimer après les tests (fly apps destroy).
+# Secrets (jamais dans ce fichier) : MCP_ENCRYPTION_KEY, MCP_ADMIN_PASSWORD, ODOO_USERNAME, ODOO_API_KEY.
+app = "boutisse-odoo-lecture-test"     # nom unique chez Fly : si pris, le changer ici ET dans MCP_PUBLIC_URL
+primary_region = "cdg"                 # Paris
+
+[build]
+  dockerfile = "Dockerfile"
+
+[env]
+  BOUTISSE_PROFIL = "lecture"
+  ODOO_URL = "https://tests-compta.odoo.com"
+  ODOO_DB = "tests-compta"
+  MCP_PUBLIC_URL = "https://boutisse-odoo-lecture-test.fly.dev"
+
+[[mounts]]
+  source = "odoo_lecture_test_users"
+  destination = "/data"
+
+[http_service]
+  internal_port = 3000
+  force_https = true
+  auto_stop_machines = "stop"
+  auto_start_machines = true
+  min_machines_running = 0
